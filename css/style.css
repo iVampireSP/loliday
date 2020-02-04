@@ -1,0 +1,61 @@
+@font-face {
+    font-family: "Releway Black";
+    src: url(https://static-1252309123.cos.ap-chengdu.myqcloud.com/font/Raleway/Raleway-Black.ttf);
+}
+body {
+    font-family: "Releway Black";
+}
+
+.img {
+    margin-top: 80px;
+    margin-bottom: 3%;
+}
+.img1 {
+    margin-top: 140px;
+    margin-bottom: 3%;
+}
+input {
+    font-family: "Releway Black";
+    outline:none;
+}
+.t1 {
+    margin: 0 auto;
+    border: 1px solid black;
+}
+.center {
+    text-align: center;
+}
+.search {
+    text-align: center;
+    width: 50%;
+    height: 30px;
+    border-radius: 50px; 
+    border: 1.30px solid black;
+}
+.center1 {
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 5%;
+}
+.an {
+    background-color: transparent;
+}
+.an:hover {
+    background-image: linear-gradient(to right, rgb(117, 117, 117),black,rgb(117, 117, 117),black,rgb(117, 117, 117),black);    
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-background-size: 200% 100%;
+    animation: bgp 5s infinite linear;
+    box-shadow: 3px 3px 3px rgb(105, 105, 105);
+    transition: width 2s,background-color 1s;  /* 2s表示动画持续时间,多个属性之间用","号隔开 */
+	transition: width 2s linear;    /* 匀速变化(默认速度由快变慢) */		
+	transition: width 2s linear 1s;   /* 1s表示延迟变化 */		
+    transition: all 2s;  /* 所有属性都过渡,且效果一样 */
+@-webkit-keyframes bgp{
+0%{
+    background-position: 0 0;
+}
+100%{
+    background-position: -100% 0;
+}
+}
